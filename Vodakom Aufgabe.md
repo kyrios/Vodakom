@@ -9,7 +9,7 @@ Dieses Wissen lässt sich nicht einfach abfragen – es besteht oft aus **„Unk
 
 Menschen werden deshalb „eingelernt“: Ihre Arbeitsergebnisse werden überprüft, sie erhalten Feedback, bewerten dieses und speichern neues Wissen langfristig ab. So entwickeln sie sich Schritt für Schritt zu erfahrenen Fachleuten.
   
-Mit ***Learnium*** wollen wir AI-Agenten etwas Ähnliches ermöglichen:
+Mit ***Learnium*** ermöglichen wir AI-Agenten etwas Ähnliches:
 Ein System, das über Feedback langfristig dazulernt – mit einem echten Langzeitgedächtnis.
 
 
@@ -33,7 +33,7 @@ Petra wendet sich an ihren Kollegen **Horst**, der seit 20 Jahren bei Vodakom ar
 Horst prüft, welche Datenquelle Aishe verwendet hat:
 Aishe hat auf eine Tabelle namens **ALL_IPHONE_CUSTOMERS** zugegriffen – eine alte, Demo Tabelle, deren Ursprung unklar ist.
 
-Horst gibt Feedback über das Tool **Mentor-Core**:
+Horst gibt natürlichsprachliches Feedback an Aishe. Er nutzt dazu ein spezielles Interface, das ihm Vodakom zur Verfügung gestellt hat. (Weiterer AI-Agent der das Feedback verarbeitet und Aishe bereitstellt.)
 
 > „Abfragen zu Kundendaten müssen immer mit der Tabelle X_SUB erfolgen. Die genutzten Endgeräte können über einen JOIN zur Tabelle UEQ ermittelt werden. Das steht für User Equipment. Außerdem musst du wissen dass iPhones bei uns intern einfach als "APL“ bezeichnet werden.
 
@@ -48,3 +48,11 @@ Entwickelt  einen funktionierenden Prototypen, mit dem ein AI-Agent aus dem Feed
 
 Euer Ergebnis sollte zeigen, wie der Agent neues Wissen speichert, auf ähnliche Situationen überträgt und im nächsten Durchlauf **verbesserte Ergebnisse** liefert.
 
+### Bonuspunkte
+- Weboberfläche zur Interaktion mit den AI-Agenten
+- Docker-Container für einfache Bereitstellung
+
+# Hinweise
+- Die Daten sind in der Datei *vodakom_schema.sql* beschrieben. Ihr könnt sie in einer lokalen Datenbank (z.B. SQLite, PostgreSQL) importieren.
+- Für die Entwicklung des Prototypen könnt ihr beliebige Programmiersprachen und Frameworks verwenden.
+- Im Ordner 'code' findet ihr eine sehr einfache Beispielimplementierung in Python. Das README.md darin enthält Hinweise zum Starten und Testen. Ihr solltet den Code aber nicht als Beispielcode oder Ausgasbe für eure Lösung betrachten. Er dient lediglich zur veranschaulichung der Aufgabe in einem sehr einfachen Rahmen.
