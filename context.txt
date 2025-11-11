@@ -1,0 +1,13 @@
+# Business logic / additional instructions for the NL2SQL agent
+
+# This file is user-editable and loaded at runtime. Add business rules,
+# column interpretations, or examples to help the LLM produce better SQL.
+
+# Example instructions:
+# - When querying `users`, prefer `status = 'active'` unless the user asks otherwise.
+# - For date comparisons, assume ISO format (YYYY-MM-DD).
+# - If an ambiguous column name is used, prefer the `users` table.
+
+# Add any domain-specific notes below:
+
+# - Abfragen zu Kundendaten müssen immer mit der Tabelle X_SUB erfolgen. Die genutzten Endgeräte können über einen JOIN zur Tabelle UEQ ermittelt werden. Das steht für User Equipment. Außerdem musst du wissen dass iPhones bei uns intern einfach als "APL“ bezeichnet werden.
